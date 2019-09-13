@@ -12,58 +12,66 @@ namespace WindowsFormsAssignmentApp1
 {
     public partial class Home : Form
     {
+        double itemPrice;
         public Home()
         {
             InitializeComponent();
+       
         }
 
         private void orderComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string orderprice = "";
+            string ordercombobox;
+            ordercombobox = orderComboBox.Text;
+            
 
-            if (orderComboBox.Text == "Black")
+            if (ordercombobox.ToString() == "Black")
             {
-                orderprice = 120;
+                itemPrice = 120;
             }
-            if (orderComboBox.Text == "Cold")
+            if (ordercombobox.ToString() == "Cold")
             {
-                orderprice = 120;
+                itemPrice = 100;
             }
-            if (orderComboBox.Text == "Hot")
+            if (ordercombobox.ToString() == "Hot")
             {
-                orderprice = 120;
+                itemPrice = 90;
             }
-            if (orderComboBox.Text == "Reguler")
+            if (ordercombobox.ToString() == "Reguler")
             {
-                orderprice = 120;
+                itemPrice = 80;
             }
+            
         }
         private void saveButton_Click(object sender, EventArgs e)
         {
             string customername = "";
             string contactno = "";
             string address = "";
-
-            string order;
-            string quantity;
-
-            int ordertotal;
-
+            string item = "";
+            string orderquantity = "";
+            
             customername = customerNameTextBox.Text;
             contactno = contactNoTextBox.Text;
             address = addressTextBox.Text;
-
+            item = orderComboBox.Text;
+            orderquantity = quantityTextBox.Text;
             
-            quantity = quantityTextBox.Text;
 
+            double unitprice = Convert.ToDouble(itemPrice);
+            double quantity = Convert.ToDouble(quantityTextBox.Text);
+            double grandtotal = unitprice * quantity;
+            double total = grandtotal;
+                    
+            showRichTextBox.Text = ("Customer Name : " + customername + "\r" 
+                         + "Contact No : " + contactno + "\r" 
+                         + "Address : " + address + "\r" 
+                         + "Item Name : " + item + "\r" 
+                         + "Per Pcs Rate : " + itemPrice + "\r" 
+                         + "Quantity : " + orderquantity + "\r"
+                         + "Total Taka : " + total);
 
-            ordertotal = (orderprice * quantity);
-           
-
-
-            showRichTextBox.Text = ( customername + contactno + address);
         }
 
-        
     }
 }

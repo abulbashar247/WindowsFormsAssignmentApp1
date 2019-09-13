@@ -47,6 +47,7 @@
             // 
             // showRichTextBox
             // 
+            this.showRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showRichTextBox.Location = new System.Drawing.Point(471, 57);
             this.showRichTextBox.Name = "showRichTextBox";
             this.showRichTextBox.Size = new System.Drawing.Size(285, 357);
@@ -86,6 +87,7 @@
             // 
             // orderComboBox
             // 
+            this.orderComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderComboBox.FormattingEnabled = true;
             this.orderComboBox.Items.AddRange(new object[] {
             "Black",
@@ -94,36 +96,40 @@
             "Reguler"});
             this.orderComboBox.Location = new System.Drawing.Point(186, 215);
             this.orderComboBox.Name = "orderComboBox";
-            this.orderComboBox.Size = new System.Drawing.Size(185, 33);
+            this.orderComboBox.Size = new System.Drawing.Size(185, 28);
             this.orderComboBox.TabIndex = 4;
             this.orderComboBox.SelectedIndexChanged += new System.EventHandler(this.orderComboBox_SelectedIndexChanged);
             // 
             // quantityTextBox
             // 
+            this.quantityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quantityTextBox.Location = new System.Drawing.Point(186, 258);
             this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(185, 31);
+            this.quantityTextBox.Size = new System.Drawing.Size(185, 26);
             this.quantityTextBox.TabIndex = 5;
             // 
             // addressTextBox
             // 
+            this.addressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addressTextBox.Location = new System.Drawing.Point(186, 143);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(185, 31);
+            this.addressTextBox.Size = new System.Drawing.Size(185, 26);
             this.addressTextBox.TabIndex = 3;
             // 
             // contactNoTextBox
             // 
+            this.contactNoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactNoTextBox.Location = new System.Drawing.Point(186, 95);
             this.contactNoTextBox.Name = "contactNoTextBox";
-            this.contactNoTextBox.Size = new System.Drawing.Size(185, 31);
+            this.contactNoTextBox.Size = new System.Drawing.Size(185, 26);
             this.contactNoTextBox.TabIndex = 2;
             // 
             // customerNameTextBox
             // 
+            this.customerNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerNameTextBox.Location = new System.Drawing.Point(186, 52);
             this.customerNameTextBox.Name = "customerNameTextBox";
-            this.customerNameTextBox.Size = new System.Drawing.Size(185, 31);
+            this.customerNameTextBox.Size = new System.Drawing.Size(185, 26);
             this.customerNameTextBox.TabIndex = 1;
             // 
             // label5
