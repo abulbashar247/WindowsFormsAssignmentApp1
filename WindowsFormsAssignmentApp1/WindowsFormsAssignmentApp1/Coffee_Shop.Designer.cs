@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsAssignmentApp1
 {
-    partial class Home
+    partial class Coffee_Shop
     {
         /// <summary>
         /// Required designer variable.
@@ -193,7 +193,7 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Assignment 2: Coffee Shop";
             // 
-            // Home
+            // Coffee_Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -201,7 +201,8 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.showRichTextBox);
-            this.Name = "Home";
+            this.Name = "Coffee_Shop";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Coffee Shop";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

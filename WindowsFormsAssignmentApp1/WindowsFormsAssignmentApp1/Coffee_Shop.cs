@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAssignmentApp1
 {
-    public partial class Home : Form
+    public partial class Coffee_Shop : Form
     {
         double itemPrice;
-        public Home()
+        public Coffee_Shop()
         {
             InitializeComponent();
        
@@ -72,6 +72,5 @@ namespace WindowsFormsAssignmentApp1
                          + "Total Taka : " + total);
 
         }
-
     }
 }
